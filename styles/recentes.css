@@ -1,0 +1,56 @@
+.recentes {
+    background: var(--azul-degrade);
+    border-top: 1em solid var(--branco);
+    padding: 1.5em 0;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.recentes__texto {
+    color: var(--branco);
+    font-size: 16px;
+    font-weight: 300;
+    text-transform: uppercase;
+    padding-bottom: 1.5em;
+}
+
+.recentes__lista {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    row-gap: 1em;
+}
+
+.recentes__botao {
+    text-decoration: none;
+    color: var(--branco);
+    font-size: 14px;
+    font-weight: 700;
+    padding: 1.5em;
+}
+
+@media screen and (min-width: 1024px) {
+    .recentes {
+        border-top: none;
+    }
+
+    .recentes__botao {
+        font-size: 24px;
+    }
+    
+    .recentes__texto {
+        font-size: 24px;
+    }
+}
+
+@media screen and (min-width: 1728px) {
+    .recentes {
+        padding: 5em 25vw;
+    }
+
+    .recentes__texto {
+        font-size: 32px;
+    }
+}
